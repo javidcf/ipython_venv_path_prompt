@@ -16,7 +16,8 @@ def get_venv_prompt_prefix():
 
 class EnvPathPrompts(Prompts):
     PATH_FMT = '{}{{}}\n'.format(get_venv_prompt_prefix())
-    def __init__(self, parent_prompts):
+    def __init__(self, shell, parent_prompts):
+        super().__init__(shell)
         self.parent_prompts = parent_prompts
     def in_prompt_tokens(self):
         return [(Token.Comment, self.PATH_FMT.format(os.getcwd()))] + self.parent_prompts.in_prompt_tokens()
