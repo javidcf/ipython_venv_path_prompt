@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="ipython_venv_path_prompt",
-    version="0.1.1",
+    version="0.1.2",
     packages=["ipython_venv_path_prompt"],
     license="MIT",
     author="Javier Dehesa",
