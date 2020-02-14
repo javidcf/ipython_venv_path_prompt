@@ -24,7 +24,7 @@ or from git:
     python setup.py install
 
 The extension can be loaded from within an IPython session with
-``import ipython_venv_path_prompt`. To load the extension automatically, edit
+``import ipython_venv_path_prompt``. To load the extension automatically, edit
 your IPython profile file. This file is located under your profile directory,
 which by default is ``~/.ipython/profile_default``, but you can check the
 exact location with the following command:
