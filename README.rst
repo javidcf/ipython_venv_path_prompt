@@ -1,10 +1,9 @@
 About
 -----
 
-A simple extension to show the path and virtual environment, if any, of the
-current interpreter. The extension attempts to detect both |venv|_ and
-Anaconda_ environments, and shows it along with the path above the standard
-IPython input prompt.
+A simple IPython extension to show the path and virtualenv in the prompt.
+The extension attempts to detect both |venv|_ and Anaconda_ environments,
+and shows it along with the path above the standard IPython input prompt.
 
 Installation
 ------------
