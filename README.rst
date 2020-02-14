@@ -13,13 +13,13 @@ Install as usual from PyPI:
 
 ::
 
-    pip install ipython_venv_path_prompt
+    pip install ipython-venv-path-prompt
 
 or from git:
 
 ::
 
-    git clone http://github.com/jdehesa/ipython_venv_path_prompt.git
+    git clone https://github.com/javidcf/ipython_venv_path_prompt.git
     cd ipython_venv_path_prompt/
     python setup.py install
 
