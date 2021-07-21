@@ -38,10 +38,14 @@ startup. Your configuration file could look like this:
 
 .. code-block:: python
 
-    c = get_config()
-    c.InteractiveShellApp.extensions = [
-        'ipython_venv_path_prompt'
-    ]
+    try:
+        # Load the extension only if the package is installed
+        import ipython_venv_path_prompt
+        c = get_config()
+        c.InteractiveShellApp.extensions = [
+            'ipython_venv_path_prompt'
+        ]
+    except ImportError: pass
 
 For more information about IPython configuration, see `Introduction to IPython
 documentation`_.
